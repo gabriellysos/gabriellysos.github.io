@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- 
-        Aluno: Gabrielly de Barros Soares
-        RU: 4868165
-    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -13,38 +9,46 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <h1>Gabrielly Soares</h1>
+        <h1>Projeto Theme Changer</h1>
         <nav>
-            <a href="index.html">Sobre mim</a>
-            <a href="formacao.html">Formação</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="contato.html" class="selected">Contato</a>
+            <a href="index.html">Sobre</a>
+            <a href="integrantes.html">Integrantes</a>
+            <a href="tarefas.html">Tarefas</a>
         </nav>
     </header>
 
     <!-- Conteúdo Principal -->
-    <main>
-        <h2>Entre em contato</h2><br>
-        <p>Preencha o formulário abaixo ou entre em contato diretamente pelo meu <a href="https://www.linkedin.com/in/gabriellybsoares/" target="_blank">LinkedIn</a>.</p>
-        <br>
-        <form action="#" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    <div class="container">
+        <div id="contato">
+            <h2>Entre em contato</h2><br>
+            <p>Preencha o formulário abaixo para entrar em contato:</p>
+            <br>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </main>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
     
     <!-- Rodapé -->
     <footer>
-        <p>Desenvolvido por Gabrielly Soares para a matéria Fundamentos da Programação Web<br>
-        RU: 4868165</p>
+        <a href="contato.html" class="selected">Contato</a>
+        <p>Desenvolvido por Gabrielly Soares para a matéria Fundamentos de Desenvolvimento de Software<br></p>
+        <button onclick="trocarTema()">Alternar Tema</button>
     </footer>
+    
+    <script>
+        function trocarTema() {
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
 </body>
 </html>

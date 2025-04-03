@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Theme Changer</title>
+
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Projeto Theme Changer</h1>
+        <nav>
+            <a href="index.html">Sobre</a>
+            <a href="integrantes.html" class="selected">Integrantes</a>
+            <a href="tarefas.html">Tarefas</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div id="integrantes">
+            <h2>Integrantes<br></h2>
+            <div class="integrante">
+                <img src="foto.jpg" alt="Integrante - Gabrielly">
+                <p><strong><br>Nome:</strong> Gabrielly de Barros Soares</p>
+                <p><strong><br>Função:</strong> Desenvolvedora FullStack</p>
+                <p><strong><br>Descrição:</strong> Experiência prática em Java, programação orientada a objetos, Spring, banco de dados (PostgreSQL, MySQL),
+                     testes automatizados com JUnit e Mockito, desenvolvimento de APIs REST e metodologias ágeis (Scrum/Kanban) com
+                      versionamento de código (Git, GitHub/Bitbucket).</p>
+       
+                   <p><br>Atualmente trabalho como estagiária na Honda e estou ampliando seus conhecimentos nas ferramentas 
+                       do universo Java, além de boas práticas como princípios SOLID e Clean Code. Também possuo experiência intermediária em Python.</p>
+       
+                   <p><br>Anteriormente cursei Jogos Digitais na FATEC, onde pude explorar minha criatividade utilizando C#
+                        para desenvolver jogos em equipe.</p>
+                <p><br><a href="https://github.com/gabriellysos">GitHub</a> | <a href="https://www.linkedin.com/in/gabriellybsoares">LinkedIn</a></p>
+            </div>
+        </div>
+    </div>
+
+        <footer>
+            <p>Contato</p>
+            <p>Desenvolvido por Gabrielly Soares para a matéria Fundamentos de Desenvolvimento de Software</p>
+            <button onclick="trocarTema()">Alternar Tema</button>
+        </footer>
+        
+        <script>
+            function trocarTema() {
+                document.body.classList.toggle('light-mode');
+            }
+        </script>
+    </body>
+    </html>

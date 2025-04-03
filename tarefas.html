@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Theme Changer</title>
+
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Projeto Theme Changer</h1>
+        <nav>
+            <a href="index.html">Sobre</a>
+            <a href="integrantes.html">Integrantes</a>
+            <a href="tarefas.html" class="selected">Tarefas</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div id="tarefas">
+            <h2>Tarefas</h2>
+            <table>
+                <br>
+                <tr>
+                    <th>Nome</th>
+                    <th>RU</th>
+                    <th>Tarefa</th>
+                </tr>
+                <tr>
+                    <td>Gabrielly de Barros Soares</td>
+                    <td>4868165</td>
+                    <td>Desenvolvimento de todo o site</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+        <footer>
+            <p>Contato</p>
+            <p>Desenvolvido por Gabrielly Soares para a matéria Fundamentos de Desenvolvimento de Software</p>
+            <button onclick="trocarTema()">Alternar Tema</button>
+        </footer>
+        
+        <script>
+            function trocarTema() {
+                document.body.classList.toggle('light-mode');
+            }
+        </script>
+    </body>
+    </html>
